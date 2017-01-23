@@ -1,0 +1,468 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+
+body{
+	font: 300 15px/22px "Roboto","Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container,
+.grid {
+  margin: 0 auto;
+
+}
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.col-1-3,
+.col-2-3,
+.col-3-5  {
+  display: inline-block;
+  vertical-align: top;
+}
+.col-1-3 {
+  width: 33.33%;
+}
+.col-2-3 {
+  width: 66.66%;
+}
+.col-3-5 {
+  width: 66.66%;
+}
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a {
+  color: #000000;
+  text-decoration: none;
+
+}
+
+a:hover{
+	border-bottom: 2px solid;
+}
+
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+h1 {
+  font-family: "PT sans narrow", Futura, Charcoal, sans-serif;
+  font-stretch: 10px;
+  padding-top: 22px;
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 44px;
+  text-align: center;
+}
+h2{
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+
+p{
+	line-height: 24px;
+}
+h3{
+	font-size: 24px;
+	line-height: 50px;
+}
+h5{
+	font-size: 14px;
+}
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+  vertical-align: center;
+}
+
+
+/*
+  ========================================
+  About
+  ========================================
+*/
+header{
+	margin-bottom: 100px;
+}
+header h1{
+	margin-bottom: 0;
+	background-color: rgba(245, 245, 245, 0.95);
+	
+}
+nav{
+	padding: 10px 0;
+	background-color: rgba(245, 245, 245, 0.95);
+	border-bottom: 1px solid #DCDCDC;
+	text-align: center;
+	width: 100%;
+}
+#avator {
+  display: block;
+  margin-bottom: 30px;
+  margin-right: -50px;
+  width: 160px;
+  float: right;
+
+}
+.about p a{
+	clear: both;
+	float: right;
+	margin-right: -30px;
+	border-width: 2px;
+	padding: 2px 30px;
+	border-style: solid;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+.linkcolor:hover{
+  color: black;
+  background-color: #50E3C2;
+  border:2px solid black;
+}
+.right ul li{
+	line-height: 30px;
+	margin-left: 130px;
+	list-style-type: square;
+}
+.right ul li:first-child{
+	list-style-type: circle;
+}
+
+
+/*
+  ========================================
+  Work-Lift
+  ========================================
+*/
+.occupy{
+	height: 100px;
+}
+.occupy2{
+	height: 85px;
+}
+.row{
+	background-color: #ECECEC;
+	height: 350px;
+	margin: 0 auto;
+	width: 92%;
+}
+.primary-content{
+	height: 350px;
+	padding: 30px 30px;
+	position: relative;
+}
+
+.link{
+	position: absolute;
+	bottom: 30px;
+	border-bottom: 2px solid;
+}
+.link-uxcolor{
+	border-bottom-color: #50E3C2;
+}
+.link-archcolor{
+	border-bottom-color: #FF5900;
+}
+.link-videocolor{
+	border-bottom-color: #AB47BC;
+}
+.link-uxcolor:hover{
+	color: #50E3C2;
+}
+.link-archcolor:hover{
+	color: #FF5900;
+}
+.link-videocolor:hover{
+	color: #AB47BC;
+}
+
+.primary-pic{
+	position: relative;
+	height: 350px;
+	background-image:url("../picture/lift.jpg");
+	background-size:cover;
+	background-position: center;
+}
+
+.image-hover{
+	height: 350px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	opacity: 0;
+}
+.image-hover:hover{
+	opacity: 0.5;	
+}
+
+
+/*
+  ========================================
+  Work-Ceremony*3
+  ========================================
+*/
+
+.row2{
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 92%;
+}
+.item{
+	height: 500px;
+	border-right:15px solid white;
+	border-left:15px solid white;
+	background-color: #ECECEC;
+}
+
+#ceremony{
+	border-left: none;
+}
+#animation{
+	border-right: none;
+}
+.pic{
+	height: 220px;
+	background-image:url("../picture/ceremony.jpg");
+	background-size:cover;
+	background-position: center;
+	position: relative;
+}
+.pic-ceremony{
+	height: 220px;
+	background-image:url("../picture/ceremony/original.jpg");
+	background-size:cover;
+	background-position: center;
+	position: relative;
+}
+.pic-domino{
+	height: 220px;
+	background-image:url("../picture/domino/original.jpg");
+	background-size:cover;
+	background-position: center;
+	position: relative;
+}
+.pic-graphic{
+	height: 220px;
+	background-image:url("../picture/graphic/small_title.jpg");
+	background-size:cover;
+	background-position: center;
+	position: relative;
+}
+.pic-timber{
+	height: 220px;
+	background-image:url("../picture/timber/title.jpg");
+	background-size:cover;
+	background-position: center;
+	position: relative;
+}
+.pic-pavilion{
+	height: 220px;
+	background-image:url("../picture/pavilion/title.jpg");
+	background-size:cover;
+	background-position: center;
+	position: relative;
+}
+.transition{
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.image-hover2{
+	height: 220px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	opacity: 0;	
+}
+.image-hover2:hover{
+	opacity: 0.5;	
+}
+.content{
+	height: 280px;
+	padding: 23px 30px;
+	position: relative;
+}
+.primary-content .tag{
+	position: relative;
+	top: none;
+}
+.tag{
+	position: absolute;
+	top: -13px;
+	color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.uxcolor{
+	background-color: #50E3C2;
+}
+.archcolor{
+	background-color: #FF5900;
+}
+.videocolor{
+	background-color: #AB47BC;
+}
+
+/*
+  ========================================
+  Contact
+  ========================================
+*/
+.contact{
+	text-align: center;
+	margin-bottom: 220px;
+}
+
+.contact a:hover{
+	border:none;
+	background-color: #50E3C2;
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+footer{
+	background-color: rgba(245, 245, 245, 0.95);
+}
+.copyright{
+	margin-bottom: 0;
+	line-height: 50px;
+	text-align: center;
+}
+/*
+  ========================================
+  Fixed nav bar
+  ========================================
+*/
+.fixed {
+	position: fixed; 
+	top: 0;
+	z-index: 5;
+}
+.addmargin{
+	margin-bottom: 143px;
+}
+
+.underline{
+	border-bottom: 2px solid black;
+}
+
+
+#particle-canvas {
+  width: 100%;
+  height: 100%;
+}

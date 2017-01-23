@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>{{ title }}</title>
+    <base href="/">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Roboto:200,300,400,500,700,900" rel="stylesheet">
+  </head>
+
+  <body>
+    <a name="ABOUT"></a>
+    <header class="add">
+      <h1>Shu Zhou</h1>
+      <nav class="sticky">
+        <ul>
+          <li class="a underline"><a href="/#ABOUT">ABOUT</a></li>
+          <li class="b"><a href="/#WORK">WORK</a></li>
+          <li class="c"><a href="/#CONTACT">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    {% block content %}
+
+  
+
+    {% endblock %}
+
+    <footer>
+      <div>
+        <p class="copyright">&copy;2016 by Shu Zhou</p>
+      </div>
+    </footer>
+
+  <!--=============== Script ====================-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+    <script>
+        $(window).scroll(function(){
+        var sticky = $('.sticky'),
+            add = $('.add'),
+          scroll = $(window).scrollTop();
+
+          if (scroll >=66){sticky.addClass('fixed'), add.addClass("addmargin");}
+          else {sticky.removeClass('fixed'),add.removeClass('addmargin');}
+        });
+
+
+        // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
+        var mainbottom = $('#work').offset().top ;
+        var secondbottom = $('#contact').offset().top ;
+        // on scroll, 
+        $(window).scroll(function(){
+            // we round here to reduce a little workload
+            var stop = $(window).scrollTop();
+
+            if (stop > secondbottom-200) {
+                $('.c').addClass('underline'),
+                $('.b').removeClass('underline'),
+                $('.a').removeClass('underline');
+            } 
+            else if(stop > mainbottom-200){
+                $('.a').removeClass('underline'),
+                $('.b').addClass('underline'), 
+                $('.c').removeClass('underline');
+            }else {
+                $('.a').addClass('underline'),
+                $('.b').removeClass('underline'), 
+                $('.c').removeClass('underline');
+            }
+
+        });
+
+
+        //+ $('#work').height()
+    </script>
+
+
+
+  </body>
+  </html>
