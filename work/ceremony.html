@@ -1,5 +1,32 @@
-{% extends "base2.html" %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Ceremony | Shu Zhou</title>
+
+    <link href="../css/main2.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Roboto:200,300,400,500,700,900" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="nav-down">
+      <nav >
+        <ul>
+          <li ><a href="../index.html#ABOUT">ABOUT</a></li>
+          <li ><a href="../index.html#WORK">WORK</a></li>
+          <li ><a href="../index.html#CONTACT">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+
+
 
 <section>
   <!--=============== Title ====================-->
@@ -84,7 +111,7 @@
 
     </div><!--asd
     --><div class="col-1-2">
-        <img src="picture/ceremony/affinity.png" alt="affinity wall" id="affinity">
+        <img src="../picture/ceremony/affinity.png" alt="affinity wall" id="affinity">
 
     </div>
     
@@ -95,13 +122,13 @@
     <h2 class="subtitle2">User Journey</h2>
     <p>From our interviews, we created personas of a meeting's <strong>participant</strong> and <strong>host</strong>.</p>
     <div class="col-1-2 padding-userjourney-left">
-    	<img src="picture/ceremony/personas.jpg" alt="persona1" class="width100">
+    	<img src="../picture/ceremony/personas.jpg" alt="persona1" class="width100">
     </div><!--asd
     --><div class="col-1-2 padding-userjourney-right">
-    	<img src="picture/ceremony/personas2.jpg" alt="persona2" class="width100">
+    	<img src="../picture/ceremony/personas2.jpg" alt="persona2" class="width100">
     </div>
     <div>
-    	<img src="picture/ceremony/Sitemap.png" alt="sitemap" class="width100">
+    	<img src="../picture/ceremony/Sitemap.png" alt="sitemap" class="width100">
     </div>
   </div>
 
@@ -131,7 +158,7 @@
 
     </div><!--asd
     --><div class="col-1-3">
-      <img class="width100" src="picture/ceremony/login.png" alt="login">
+      <img class="width100" src="../picture/ceremony/login.png" alt="login">
     </div>
   </div>
  
@@ -139,7 +166,7 @@
 
   <div class="padding-50-100">
     <div class="col-2-3">
-      <img class="width100" src="picture/ceremony/setup.png" alt="setup">
+      <img class="width100" src="../picture/ceremony/setup.png" alt="setup">
 
     </div><!--asd
     --><div class="col-1-3 vertical-middle">
@@ -165,7 +192,7 @@
 
     </div><!--asd
     --><div class="col-1-3">
-      <img class="width100" src="picture/ceremony/question.gif" alt="question">
+      <img class="width100" src="../picture/ceremony/question.gif" alt="question">
     </div>
   </div>
 
@@ -181,7 +208,7 @@
 
     </div><!--asd
     --><div class="col-1-3">
-      <img class="width100" src="picture/ceremony/dashboard.gif" alt="question">
+      <img class="width100" src="../picture/ceremony/dashboard.gif" alt="question">
     </div>
   </div>
 
@@ -197,10 +224,70 @@
 
     </div><!--asd
     --><div class="col-1-3">
-      <img class="width100" src="picture/ceremony/analyze.gif" alt="question">
+      <img class="width100" src="../picture/ceremony/analyze.gif" alt="question">
     </div>
   </div>
 
 </section>
 
-{% endblock %}  
+
+
+
+
+
+
+<footer>
+      <div>
+        <p class="copyright">&copy;2016 by Shu Zhou</p>
+      </div>
+    </footer>
+
+  <!--=============== Script ====================-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   
+   <script type="text/javascript">
+     // Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+   </script>
+ 
+
+
+
+  </body>
+  </html>

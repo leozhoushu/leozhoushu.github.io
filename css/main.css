@@ -271,6 +271,9 @@ nav{
 .link-archcolor{
 	border-bottom-color: #FF5900;
 }
+.link-researchcolor{
+	border-bottom-color: #10C1FF;
+}
 .link-videocolor{
 	border-bottom-color: #AB47BC;
 }
@@ -279,6 +282,9 @@ nav{
 }
 .link-archcolor:hover{
 	color: #FF5900;
+}
+.link-researchcolor:hover{
+	color: #10C1FF;
 }
 .link-videocolor:hover{
 	color: #AB47BC;
@@ -410,6 +416,9 @@ nav{
 }
 .archcolor{
 	background-color: #FF5900;
+}
+.researchcolor{
+	background-color: #10C1FF;
 }
 .videocolor{
 	background-color: #AB47BC;

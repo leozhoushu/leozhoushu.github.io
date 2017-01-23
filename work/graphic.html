@@ -1,6 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Graphic | Shu Zhou</title>
 
-{% extends "base2.html" %}
-{% block content %}
+    <link href="../css/main2.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Roboto:200,300,400,500,700,900" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="nav-down">
+      <nav >
+        <ul>
+          <li ><a href="../index.html#ABOUT">ABOUT</a></li>
+          <li ><a href="../index.html#WORK">WORK</a></li>
+          <li ><a href="../index.html#CONTACT">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+
+
 
 
 <section>
@@ -20,8 +46,8 @@
 
     <div class="col-1-2-new width50">
       <div class="padding-50">
-        <img class="width50 table-cell" src="picture/graphic/web1.jpg" alt="web1">
-        <img class="width50 table-cell padding-left-10" src="picture/graphic/web2.jpg" alt="web2">
+        <img class="width50 table-cell" src="../picture/graphic/web1.jpg" alt="web1">
+        <img class="width50 table-cell padding-left-10" src="../picture/graphic/web2.jpg" alt="web2">
       </div>
     </div><!--asd
     --><div class="">
@@ -42,7 +68,7 @@
     <p> <span class="a2"><a href="http://www.mblem.umich.edu/v/badges" >Mblem Badges</a></span> are defined into eight categories. Each badge represents student's experience or expertise in that area. In my case, I redesigned four categories and interpreted them in two different ways. One is using lines while the other is using planes. The former's color pallet is exact the same as it is right now and the latter's is more diverse and ambiguous.<br>&nbsp;<br></p> 
     <div >
       
-      <img class="width100" src="picture/graphic/badge.jpg" alt="badge">
+      <img class="width100" src="../picture/graphic/badge.jpg" alt="badge">
     </div>
   </div>
 
@@ -58,9 +84,9 @@
     </div><!--asd
     --><div class="col-1-2-new width50">
       <div class="padding-50">
-        <img class="width100 table-cell padding-bottom-20" src="picture/graphic/bag.jpg" alt="bag">
-        <img class="width100 table-cell padding-bottom-20" src="picture/graphic/brochure.jpg" alt="brochure">
-        <img class="width100 table-cell padding-bottom-20" src="picture/graphic/paul.jpg" alt="paul">
+        <img class="width100 table-cell padding-bottom-20" src="../picture/graphic/bag.jpg" alt="bag">
+        <img class="width100 table-cell padding-bottom-20" src="../picture/graphic/brochure.jpg" alt="brochure">
+        <img class="width100 table-cell padding-bottom-20" src="../picture/graphic/paul.jpg" alt="paul">
       </div>
     </div>
 
@@ -72,4 +98,66 @@
 </section>
 
 
-{% endblock %}  
+
+
+
+
+
+
+
+
+<footer>
+      <div>
+        <p class="copyright">&copy;2016 by Shu Zhou</p>
+      </div>
+    </footer>
+
+  <!--=============== Script ====================-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   
+   <script type="text/javascript">
+     // Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+   </script>
+ 
+
+
+
+  </body>
+  </html>

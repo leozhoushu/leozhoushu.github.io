@@ -1,6 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Domino's | Shu Zhou</title>
 
-{% extends "base2.html" %}
-{% block content %}
+    <link href="../css/main2.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Roboto:200,300,400,500,700,900" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="nav-down">
+      <nav >
+        <ul>
+          <li ><a href="../index.html#ABOUT">ABOUT</a></li>
+          <li ><a href="../index.html#WORK">WORK</a></li>
+          <li ><a href="../index.html#CONTACT">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+
+
 
 
 <section>
@@ -71,8 +97,8 @@
   <div class="paragraph">
     <h2 class="subtitle2">Research &amp; Process</h2>
     <p class="middle"><strong>Literatura Review - Contextural Inquiry - Affinity Wall</strong></p>
-    <img class="width100" src="picture/domino/digram.png" alt="research process">
-    <img class="width100" src="picture/domino/affinitywall.jpg" alt="affinity wall">
+    <img class="width100" src="../picture/domino/digram.png" alt="research process">
+    <img class="width100" src="../picture/domino/affinitywall.jpg" alt="affinity wall">
     
   </div>
 
@@ -163,10 +189,69 @@
       </ul>
     </div>
     <div class="deliverable a2">
-      <a  href="file/domino.pdf">Full Paper</a>
+      <a  href="../file/domino.pdf">Full Paper</a>
     </div>
   </div>
 </section>
 
 
-{% endblock %}  
+
+
+
+
+
+<footer>
+      <div>
+        <p class="copyright">&copy;2016 by Shu Zhou</p>
+      </div>
+    </footer>
+
+  <!--=============== Script ====================-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   
+   <script type="text/javascript">
+     // Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+   </script>
+ 
+
+
+
+  </body>
+  </html>
