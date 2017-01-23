@@ -77,6 +77,7 @@
         --><li class="subtitle col-1-4">Tools &amp; Softwares
         <ul class="pinfo">
           <li>Sketch</li>
+          <li>Framer.js</li>
           <li>Invision</li>
           <li>Balsamiq</li>
         </ul>
@@ -87,7 +88,7 @@
   <!--=============== Problems ====================-->
   <div class="paragraph">
     <h2 class="subtitle2">Problems—Participants need to be empowered</h2>
-    <p>Our client Tom is currently writing the book <i>Ceremony</i> which he hopes will improve productivity in the workplace. He will be consulting companies on his book and wanted to also build a companion app to help companies implement the book's teachings. <strong>In his vision, it should be a pretty simple app: asking people three related questions after each meeting, quick and easy. </strong>However what we concerned more is how to empower people to use this app. Rating a ceremony can be one extra work, we need to dig out or stimulate user's inside motivation.</p>
+    <p>Our client Tom is currently writing the book <i>Ceremony</i> which he hopes will improve productivity in the workplace. He will be consulting companies on his book and wanted to also build a companion app to help companies implement the book's teachings. <strong>In his vision, it should be a pretty simple app: asking people three related questions after each meeting, quick and easy. </strong>However what we concerned more is how to empower people to use this app. Rating a ceremony can be one extra work, we need to dig out and stimulate user's inside motivation.</p>
     <ul>
       <li><strong>Ceremony</strong><br>Ceremony is any repeated social interaction between two or more people, like meeting, wedding, friend gathering etc. In our case, we mainly focused on meetings.</li>
       
@@ -120,31 +121,43 @@
  <!--=============== User Jouney ====================-->
   <div class="overview background-grey padding-new">
     <h2 class="subtitle2">User Journey</h2>
-    <p>From our interviews, we created personas of a meeting's <strong>participant</strong> and <strong>host</strong>.</p>
-    <div class="col-1-2 padding-userjourney-left">
+    <p>We first did our own user research. We interviewed 8 different people and asked them questions about the meetings they attend. We talked to people who work in a wide range of industries including academic, religious, financial, construction, co-op housing, consulting, and technology. From our interviews, we created <strong>personas</strong> of a meeting's <strong>participant</strong> and <strong>host</strong> to better understand how each ceremony goes and what people's emotional status is.<br>&nbsp;</p>
+    
     	<img src="../picture/ceremony/personas.jpg" alt="persona1" class="width100">
-    </div><!--asd
-    --><div class="col-1-2 padding-userjourney-right">
     	<img src="../picture/ceremony/personas2.jpg" alt="persona2" class="width100">
-    </div>
+    
     <div>
     	<img src="../picture/ceremony/Sitemap.png" alt="sitemap" class="width100">
     </div>
   </div>
 
- <!--=============== Painpoints ====================-->
-  <div class="paragraph below-occupy">
-    <h2 class="subtitle2">Painpoints in the Journey</h2>
-    <p>To better understand uers, we first did our own user research. We interviewed 8 different people and asked them questions about the meetings they attend. We talked to people who work in a wide range of industries including academic, religious, financial, construction, co-op housing, consulting, and technology.</p>
-
-
-
+ <!--=============== Iteration on Design====================-->
+  <div class="paragraph ">
+    <h2 class="subtitle2">Design Iteration</h2>
+  </div>
+  <div>
+    <div class="padding-left-50 ">
+      
+      <p><strong>How to make rating quick while informative?</strong></p>
+      <p>Out client Tom asked us to incorporate three questions he had concluded into the rating phase. We discussed a lot about it. Should we let people choose from positive neutral negative, or should we provide a rating bar from 0 to 5? After testing, we found people can't tell the difference between a 3 point meeting and a 2 point meeting. Also in most cases they tended to be nertral. However, point or neutral are meaningless, the app is supposed to find problems of meetings. So we decided to make it extremely easy with only two options, <strong>we did it on purpose to push users to select an opinion</strong>. </p>
+      <p>&nbsp;</p>
+    </div>
+    <img class="width100" src="../picture/ceremony/question-2.png" alt="question2">
+    <div class="padding-left-50">
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><strong>How to make dashboard straightforward?</strong></p>
+      <p>Too much information can be distracting, so we kept simplifying our design to make it easily understandable. In the end, we used different size for smiley and frown face to indicate each ceremony's result.</p>
+      <p>&nbsp;</p>
+    </div>
+    <img class="width100" src="../picture/ceremony/dashboard-2.png" alt="dashboard2">
   </div>
 
  <!--=============== Final Solutions ====================-->
-  <div class="background-grey padding-100">
-    <div class="col-2-3 left-50 vertical-middle">
-      <div >
+  <div class="padding-100 table background-grey">
+
+    <div class="col-1-2-new width66">
+      <div class="padding-50-noleft">
         <h2 class="subtitle2 alignleft ">Final Solution</h2>
         <p>The whole process consists of four parts:<br>&nbsp;</p>
         <ul class="steps">
@@ -153,80 +166,105 @@
           <li>3) Provide anonymous feedback</li>
           <li>4) Analyze data</li>
         </ul>
-
       </div>
-
     </div><!--asd
-    --><div class="col-1-3">
-      <img class="width100" src="../picture/ceremony/login.png" alt="login">
+    --><div class="col-1-2-new width33">
+      <div class="padding-40">
+        <img class="width100" src="../picture/ceremony/login.png" alt="login">     
+      </div>
     </div>
+
   </div>
- 
- <!--=============== 1) set up ====================-->
 
-  <div class="padding-50-100">
-    <div class="col-2-3">
-      <img class="width100" src="../picture/ceremony/setup.png" alt="setup">
 
+ <!--=============== Set Up ====================-->
+  <div class="padding-100 table">
+
+    <div class="col-1-2-new width66">
+      <div class="padding-50-noleft">
+        <img class="width100" src="../picture/ceremony/setup.png" alt="setup">
+      </div>
     </div><!--asd
-    --><div class="col-1-3 vertical-middle">
-      <div class="left-50 ">
+    --><div class="col-1-2-new width33">
+      <div class="">
         <h2 class="subtitle2 alignleft ">1) Set up a ceremony</h2>
-        <p>We decided to make this process more seamless by including all of the fields on one screen and having a progress indicator at the top. </p>
-        
-
+        <p>We decided to make this process more seamless by including all of the fields on one screen and <strong>having a progress indicator</strong> at the top. </p>  
       </div>
+    </div>
 
-    </div>   
   </div>
 
- <!--=============== 2) ====================-->
-  <div class="background-grey padding-100">
-    <div class="col-2-3 left-50 vertical-middle">
-      <div >
+ 
+
+ <!--=============== 2+3) ====================-->
+  <div class="padding-100 table background-grey">
+
+    <div class="col-1-2-new width66">
+      <div class="padding-50-noleft">
         <h2 class="subtitle2 alignleft ">2) Receive notifications &amp; 3) Provide feedback</h2>
-        <p>From our user tests we learned this was the most important part of the user flow. We had to make this as quick and as easy as possible or else users would not respond to the survey prompt. Imagine if you have 10 meetings a week in the app and if each survey takes 5 minutes to complete. That's almost an hour spent every week responding to surveys. People don't have time for that. So we simplified the three questions our client outlined into one overarching "How did the ceremony go?". <br>&nbsp;<br>A user just needs to tap a smiley button and they are done. However, to allow for more qualitative responses we added attribute buttons that are optional along with an optional comments field. The attributes can be customized. We used our affinity wall findings to create the stock buttons content.</p>
-        
-
+        <p>From our user tests we learned this was the most important part of the user flow. We had to <strong>make this as quick and as easy as possible</strong> or else users would not respond to the survey prompt. So we simplified the three questions our client outlined into one overarching "How did the ceremony go?". <br>&nbsp;<br><strong>A user just needs to tap a smiley button and they are done.</strong> However, to allow for more qualitative responses we added attribute buttons that are optional along with an optional comments field. The attributes can be customized. We used our affinity wall findings to create the stock buttons content.</p>
       </div>
-
     </div><!--asd
-    --><div class="col-1-3">
-      <img class="width100" src="../picture/ceremony/question.gif" alt="question">
+    --><div class="col-1-2-new width33">
+      <div class="padding-40">
+        <img class="width100" src="../picture/ceremony/question.gif" alt="question"> 
+      </div>
     </div>
+
   </div>
 
- <!--=============== 3) ====================-->
-  <div class=" padding-100">
-    <div class="col-2-3 left-50 vertical-middle">
-      <div>
+
+
+
+
+   <!--=============== 4-1) ====================-->
+  <div class="padding-100 table">
+
+    <div class="col-1-2-new width66">
+      <div class="padding-50-noleft">
         <h2 class="subtitle2 alignleft ">4) Analyze data - Overview</h2>
-        <p>Finally, we visualized the data from the survey responses in a dashboard. A user is provided an overview of all of the ceremonies they attend and can also drill into the trend lines of individual ceremonies. Users can filter the data to look for patterns and trends. They can say "I want to see all of the attributes for ceremonies that are trending up."<br>&nbsp;<br>The app puts data into the hands of employees. The data speaks for itself: Ceremony makes it transparent. Bad data empowers positive change.  Good data allows employees to see what is working well.</p>
-        
-
+        <p>Finally, we visualized the data from the survey responses in a dashboard. A user is provided an overview of all of the ceremonies they attend. Users can also <strong>filter the data to look for patterns and trends</strong>. They can say "I want to see all of the attributes for ceremonies that are trending up."</p>
       </div>
-
     </div><!--asd
-    --><div class="col-1-3">
-      <img class="width100" src="../picture/ceremony/dashboard.gif" alt="question">
+    --><div class="col-1-2-new width33">
+      <div class="padding-40">
+        <img class="width100" src="../picture/ceremony/dashboard.gif" alt="question">
+      </div>
     </div>
+
   </div>
 
- <!--=============== 4) ====================-->
-  <div class="background-grey padding-100">
-    <div class="col-2-3 left-50 vertical-middle">
-      <div >
+
+
+   <!--=============== 4-2) ====================-->
+  <div class="padding-100 table background-grey">
+
+    <div class="col-1-2-new width66">
+      <div class="padding-50-noleft">
         <h2 class="subtitle2 alignleft ">4) Analyze data - Individual ceremony</h2>
-        <p>Finally, we visualized the data from the survey responses in a dashboard. A user is provided an overview of all of the ceremonies they attend and can also drill into the trend lines of individual ceremonies. Users can filter the data to look for patterns and trends. They can say "I want to see all of the attributes for ceremonies that are trending up."<br>&nbsp;<br>The app puts data into the hands of employees. The data speaks for itself: Ceremony makes it transparent. Bad data empowers positive change.  Good data allows employees to see what is working well.</p>
-        
-
+        <p>Users can also drill into the <strong>trend lines of individual ceremonies</strong>. The app puts data into the hands of employees. The data speaks for itself: Ceremony makes it transparent. Bad data empowers positive change.  Good data allows employees to see what is working well.</p>
       </div>
-
     </div><!--asd
-    --><div class="col-1-3">
-      <img class="width100" src="../picture/ceremony/analyze.gif" alt="question">
+    --><div class="col-1-2-new width33">
+      <div class="padding-40">
+        <img class="width100" src="../picture/ceremony/analyze.gif" alt="question">
+      </div>
     </div>
+
   </div>
+
+
+ <!--=============== Challenges ====================-->
+  <div class="paragraph below-occupy">
+    <h2 class="subtitle2">Challenges</h2>
+    <p><strong>Client's vision</strong> &nbsp;x&nbsp; <strong>Our thinking</strong><br>The first time we met our client, he already had a rough wireframe of this app and gave us some sketches. So what we did was trying to add motivation into this app to make sure potential users indeed want to use it. To achieve this, we challenged to change the original three questions which were part of core ideas in client's vision into one overarching question. The communication actually went smoothly in terms of we provided user's feedback and convincing design results each time.<br>&nbsp;<br><strong>A team full of designers</strong> &nbsp;x&nbsp; <strong>One final design decision</strong><br>Since our team was full of designers, we would all design features separately and then get together as a group for a design critique of everyone's designs. As a group we'd pull out what we liked from each, iterate, and design the next requirement together in the same way.</p>
+
+
+
+  </div>
+
+
+
 
 </section>
 
