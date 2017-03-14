@@ -464,7 +464,7 @@ i{
 .affinity-list{
   padding: 20px;
 }
-.padding-50-150 .col-1-2 .affinity-list li{
+.padding-50-150 .c-col .affinity-list li{
   font-size: 16px;
   font-weight: bold;
   margin: 8px 0px;
@@ -603,7 +603,9 @@ i{
   color: #D9463E;
 }
 
-
+.green{
+  color: #2CE6C2;
+}
 
 
  
