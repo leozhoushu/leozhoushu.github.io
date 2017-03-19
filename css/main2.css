@@ -256,6 +256,13 @@ header {
   background-size:cover;
   background-position: center;
 }
+.titleimg_lift{
+  position: relative;
+  height: 350px;
+  background-image:url("../picture/lift/mockup_black.jpg");
+  background-size:cover;
+  background-position: center;
+}
 
 .titleimg_graphic{
   position: relative;

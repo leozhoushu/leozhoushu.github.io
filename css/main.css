@@ -330,12 +330,6 @@ nav{
 	background-color: #ECECEC;
 }
 
-#ceremony{
-	border-left: none;
-}
-#animation{
-	border-right: none;
-}
 .pic{
 	height: 220px;
 	background-image:url("../picture/ceremony.jpg");
@@ -346,6 +340,13 @@ nav{
 .pic-ceremony{
 	height: 220px;
 	background-image:url("../picture/ceremony/original.jpg");
+	background-size:cover;
+	background-position: center;
+	position: relative;
+}
+.pic-lift{
+	height: 220px;
+	background-image:url("../picture/lift/mockup.jpg");
 	background-size:cover;
 	background-position: center;
 	position: relative;
