@@ -194,15 +194,21 @@ header{
 }
 header h1{
 	margin-bottom: 0;
-	background-color: rgba(245, 245, 245, 0.95);
-	
+	background-color: transparent;
+	color: white;
 }
 nav{
 	padding: 10px 0;
-	background-color: rgba(245, 245, 245, 0.95);
-	border-bottom: 1px solid #DCDCDC;
+	background-color: transparent;
+
 	text-align: center;
 	width: 100%;
+}
+nav ul li a{
+	color: white;
+}
+.underline{
+	border-bottom: 2px solid white;
 }
 #avator {
   display: block;
@@ -242,11 +248,14 @@ nav{
   Work-Lift
   ========================================
 */
+section{
+	margin-top: -80px;
+}
 .occupy{
 	height: 100px;
 }
-.occupy2{
-	height: 85px;
+.vh{
+	height: 100vh;
 }
 .row{
 	background-color: #ECECEC;
@@ -464,10 +473,24 @@ footer{
 	z-index: 5;
 }
 .addmargin{
-	margin-bottom: 143px;
+	margin-bottom: 143px;	
+}
+.addmargin h1{
+	margin-bottom: 0;
+	background-color: rgba(245, 245, 245, 0.95);
+}
+.addmargin nav{
+	padding: 10px 0;
+	background-color: rgba(245, 245, 245, 0.95);
+	border-bottom: 1px solid #DCDCDC;
+	text-align: center;
+	width: 100%;
+}
+.addmargin nav ul li a{
+	color: black;
 }
 
-.underline{
+.addmargin .underline{
 	border-bottom: 2px solid black;
 }
 
@@ -480,3 +503,4 @@ footer{
 .none{
 	display: none;
 }
+
