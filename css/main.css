@@ -194,36 +194,27 @@ header{
 }
 header h1{
 	margin-bottom: 0;
-	background-color: rgba(245, 245, 245, 0.95);
-	
+	background-color: transparent;
+	color: white;
 }
 nav{
 	padding: 10px 0;
-	background-color: rgba(245, 245, 245, 0.95);
-	border-bottom: 1px solid #DCDCDC;
+	background-color: transparent;
+
 	text-align: center;
 	width: 100%;
-  font-size: 15px;
 }
-
+nav ul li a{
+	color: white;
+}
 .underline{
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid white;
 }
-#avator {
-  display: block;
-  margin-bottom: 30px;
-  margin-right: -50px;
-  width: 160px;
-  float: right;
 
-}
 .about p a{
-	clear: both;
-	float: right;
-	margin-right: -30px;
-	border-width: 2px;
-	padding: 2px 30px;
-	border-style: solid;
+
+	margin:0 auto;
+	border-style: 2px solid;
 	letter-spacing: 1px;
 	font-weight: 400;
 }
@@ -233,12 +224,12 @@ nav{
   border:2px solid black;
 }
 .right ul li{
-	line-height: 30px;
+	line-height: 10px;
 	margin-left: 130px;
-	list-style-type: square;
+	list-style-type: none;
 }
 .right ul li:first-child{
-	list-style-type: circle;
+	list-style-type: none;
 }
 
 
@@ -247,11 +238,12 @@ nav{
   Work-Lift
   ========================================
 */
+
 .occupy{
 	height: 100px;
 }
-.occupy2{
-	height: 200px;
+.vh{
+	height: 20vw;
 }
 .row{
 	background-color: #ECECEC;
@@ -435,15 +427,34 @@ nav{
   Contact
   ========================================
 */
-.contact{
-	text-align: center;
-	margin-bottom: 220px;
-}
+#avator {
+  display: block;
+  margin-bottom: 30px;
+  margin-right: -50px;
+  width: 200px;
+  float: right;
 
-.contact a:hover{
-	border:none;
+}
+.resume a{
+	margin-right: -30px;
+	border-width: 3px;
+	padding: 2px 30px;
+	border-style: solid;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+.about{
+	padding: 200px 0;
+
+}
+.about h3{
+	line-height: 30px;
+}
+.about h3 a:hover{
 	background-color: #50E3C2;
 }
+
+
 
 /*
   ========================================
@@ -471,6 +482,24 @@ footer{
 .addmargin{
 	margin-bottom: 143px;	
 }
+.addmargin h1{
+	margin-bottom: 0;
+	background-color: rgba(245, 245, 245, 0.95);
+}
+.addmargin nav{
+	padding: 10px 0;
+	background-color: rgba(245, 245, 245, 0.95);
+	border-bottom: 1px solid #DCDCDC;
+	text-align: center;
+	width: 100%;
+}
+.addmargin nav ul li a{
+	color: black;
+}
+
+.addmargin .underline{
+	border-bottom: 2px solid black;
+}
 
 
 #particle-canvas {
@@ -482,3 +511,13 @@ footer{
 	display: none;
 }
 
+
+.width4{
+  width: 4%;
+}
+.centerimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20vw;
+}
