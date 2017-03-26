@@ -264,6 +264,14 @@ header {
   background-position: center;
 }
 
+.titleimg_selfdriving{
+  position: relative;
+  height: 350px;
+  background-image:url("../picture/selfdriving/title.png");
+  background-size:cover;
+  background-position: center;
+}
+
 .titleimg_graphic{
   position: relative;
   height: 350px;
@@ -477,7 +485,12 @@ i{
   margin: 8px 0px;
   list-style-type: square;
 }
-
+.padding-50-150 .self-col .affinity-list li{
+  font-size: 16px;
+  font-weight: bold;
+  margin: 8px 0px;
+  list-style-type: square;
+}
 .below-occupy{
   margin-bottom: 100px;
 }
