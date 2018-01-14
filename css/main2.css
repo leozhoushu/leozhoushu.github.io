@@ -173,13 +173,19 @@ h3{
 }
 
 p{
-	line-height: 24px;
-  font-size: 16px;
+	line-height: 26px;
+  font-size: 18px;
   font-weight: medium;
 }
 
 h5{
 	font-size: 14px;
+}
+
+.italic-24-grey{
+  font-size: 24px;
+  color: grey;
+  font-style: italic;
 }
 
 .title{
@@ -192,7 +198,7 @@ h5{
 	font-size: 24px;
 	text-align: center;
 	line-height: 36px;
-	margin: 80px 200px;
+	margin: 80px 15%;
 
 }
 
@@ -249,6 +255,14 @@ header {
 	background-position: center;
 }
 
+.titleimg_inneref{
+  position: relative;
+  height: 350px;
+  background-image:url("../picture/inneref/inneref_black.jpg");
+  background-size:cover;
+  background-position: center;
+}
+
 .titleimg_ceremony{
   position: relative;
   height: 350px;
@@ -300,7 +314,7 @@ header {
 */
 .overview{	
 	background-color: #ECECEC;
-  padding: 50px 150px;
+  padding: 50px 15%;
 }
 
 .subtitle{
@@ -472,6 +486,10 @@ i{
   width: 100%;
   padding: 40px 0 0 10px;
 }
+#competitor{
+  width: 100%;
+  padding: 40px 0 0 10px;
+}
 .c-col{
   padding: 40px 10px 0 0;
 }
@@ -506,9 +524,15 @@ i{
 .width80{
   width: 80%;
 }
+.width70{
+  width: 70%;
+}
 .width50{
   width: 50%;
 }
+
+
+
 .height100{
   height: 10%;
 }
@@ -530,7 +554,7 @@ i{
   padding: 50px 100px;
 }
 .padding-50-150{
-  padding: 50px 150px;
+  padding: 50px 15%;
 }
 .padding-userjourney-right{
   padding-right: 0;
@@ -607,6 +631,8 @@ i{
 .padding-left-50{
   padding: 0 50px;
 }
+
+
 .size13{
   font-size: 13px;
   text-align: center;
@@ -627,6 +653,9 @@ i{
   color: #2CE6C2;
 }
 
+.purple{
+  color: #8185C0;
+}
 
  
 
@@ -760,6 +789,35 @@ i{
   background-repeat: no-repeat;
 }
 
+#slider-inneref-1{
+  background-image: url("../picture/inneref/brainstorm.png");
+  background-size:contain;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+
+#slider-inneref-2{
+  background-image: url("../picture/inneref/storyboards.jpg");
+  background-size:contain;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+
+#slider-inneref-3{
+  background-image: url("../picture/inneref/Persona1.jpg");
+  background-size:contain;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+
+#slider-inneref-4{
+  background-image: url("../picture/inneref/Persona2.jpg");
+  background-size:contain;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+
+
 #slider2 a.control_prev, a.control_next {
   position: absolute;
   top: 40%;
@@ -797,3 +855,22 @@ i{
   color: white;
 }
 
+
+.newlist li{
+  font-size: 18px;
+  list-style-type: decimal;
+  line-height: 28px;
+
+}
+
+.quicklink a{
+  margin: 0 auto;
+  padding: 2px 30px;
+  border-width: 3px;
+  border-style: solid;
+  
+  font-weight: 800;
+}
+.quicklink a:hover{
+  background-color: #8185C0;
+}
