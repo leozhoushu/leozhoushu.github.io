@@ -168,7 +168,13 @@ h2{
   line-height: 35px;
 }
 h3{
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h4{
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -182,8 +188,18 @@ h5{
 	font-size: 14px;
 }
 
+.medium{
+  font-weight: 400;
+}
+
 .italic-24-grey{
   font-size: 24px;
+  color: grey;
+  font-style: italic;
+}
+
+.italic-20-grey{
+  font-size: 20px;
   color: grey;
   font-style: italic;
 }
@@ -259,6 +275,14 @@ header {
   position: relative;
   height: 350px;
   background-image:url("../picture/inneref/inneref_black.jpg");
+  background-size:cover;
+  background-position: center;
+}
+
+.titleimg_musi{
+  position: relative;
+  height: 350px;
+  background-image:url("../picture/musi/title.jpg");
   background-size:cover;
   background-position: center;
 }
@@ -369,6 +393,13 @@ header {
 }
 strong{
   font-weight: bold;
+}
+
+
+.newul ul li{
+  list-style-type: disc;
+  font-size: 20px;
+  margin-bottom: 12px;
 }
 
 /*
@@ -490,6 +521,17 @@ i{
   width: 100%;
   padding: 40px 0 0 10px;
 }
+#interviewee{
+  width: 100%;
+  padding: 40px 0 0 10px;
+}
+
+.innerpic{
+  width: 100%;
+  padding: 40px 0 0 10px;
+}
+
+
 .c-col{
   padding: 40px 10px 0 0;
 }
@@ -530,7 +572,9 @@ i{
 .width50{
   width: 50%;
 }
-
+.width20{
+  width: 20%;
+}
 
 
 .height100{
@@ -657,7 +701,9 @@ i{
   color: #8185C0;
 }
 
- 
+.brown{
+  color: #E4761C;
+}
 
 
 #slider {
@@ -860,7 +906,15 @@ i{
   font-size: 18px;
   list-style-type: decimal;
   line-height: 28px;
+  padding-top: 10px;
+}
 
+.newlist-bold li{
+  font-size: 18px;
+  font-weight: bold;
+  list-style-type: decimal;
+  line-height: 28px;
+  padding-top: 10px;
 }
 
 .quicklink a{
