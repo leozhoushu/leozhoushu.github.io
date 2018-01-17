@@ -539,3 +539,24 @@ footer{
   margin-right: auto;
   padding-top: 25vw;
 }
+
+
+/* Back to Top */
+	a#back-to-top {
+		font-size: 18px;
+		position: fixed;
+		bottom: 0; right: 0;
+		margin: 20px 20px 80px 20px;
+		color: whitesmoke;
+		text-shadow: 0 0 10px black;
+		border: none;
+		transition: 0.5s;
+		cursor: pointer;
+	}
+	a#back-to-top:before {
+		content: '\f01b';
+		font-family: 'FontAwesome';
+		margin-right: 10px;
+	}
+	a#back-to-top:hover { color: dodgerblue; }
+	

@@ -16,7 +16,7 @@
     <header class="nav-down">
       <nav >
         <ul>
-          <li ><a href="../index.html#ABOUT">ABOUT</a></li>
+          <li ><a href="../index.html#ABOUT">HOME</a></li>
           <li ><a href="../index.html#WORK">WORK</a></li>
           <li ><a href="../index.html#CONTACT">CONTACT</a></li>
         </ul>
@@ -29,6 +29,9 @@
 
 
 <section>
+  <a id="back-to-top">
+    <img src="../file/back_to_top.svg">
+  </a>
   <!--=============== Title ====================-->
   <div class="titleimg_musi">
     <h2 class="title">Musi</h2>
@@ -606,7 +609,12 @@ jQuery(document).ready(function ($) {
     });
 
 });    
-
+    $('#back-to-top').each(function() {
+        $(this).click(function() {
+        $('html,body').animate({scrollTop: 0 }, 'slow');
+          return false;
+          })
+        })
 
 
    </script>

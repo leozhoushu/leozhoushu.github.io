@@ -18,12 +18,13 @@
   </head>
 
   <body>
+    
     <a name="ABOUT"></a>
     <header class="add">
       <h1>Shu Zhou</h1>
       <nav class="sticky">
         <ul>
-          <li class="a underline"><a href="#ABOUT">ABOUT</a></li>
+          <li class="a underline"><a href="#ABOUT">HOME</a></li>
           <li class="b"><a href="#WORK">WORK</a></li>
           <li class="c"><a href="#CONTACT">CONTACT</a></li>
         </ul>
@@ -32,6 +33,8 @@
 
 
     <div class="video">
+      
+      
       <video  id="bgvid"  autoplay muted loop>
             <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
         <source src="file/video.mp4" type="video/mp4">
@@ -226,7 +229,15 @@
         });
 
 
+
         //+ $('#work').height()
+
+        $('#back-to-top').each(function() {
+        $(this).click(function() {
+        $('html,body').animate({scrollTop: 0 }, 'slow');
+          return false;
+          })
+        })
     </script>
 
 

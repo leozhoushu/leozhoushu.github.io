@@ -928,3 +928,25 @@ i{
 .quicklink a:hover{
   background-color: #8185C0;
 }
+
+
+/* Back to Top */
+  a#back-to-top {
+    width: 5%;
+    position: fixed;
+    bottom: 0; right: 0;
+    margin: 0px 30px 60px 0px;
+    /*color: whitesmoke;*/
+    /*text-shadow: 0 0 10px black;*/
+    /*border: none;*/
+    transition: 0.5s;
+    cursor: pointer;
+  }
+/*  a#back-to-top:before {
+    content: '\f01b';
+    font-family: 'FontAwesome';
+    margin-right: 10px;*/
+  }
+  a#back-to-top:hover {
+    border-bottom: 0px;
+  }
