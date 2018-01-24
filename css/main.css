@@ -221,6 +221,11 @@ nav ul li a{
 	letter-spacing: 1px;
 	font-weight: 400;
 }
+.intro{
+	font-size: 18px;
+	line-height: 28px;
+}
+
 .linkcolor:hover{
   color: black;
   background-color: #50E3C2;
@@ -448,9 +453,9 @@ nav ul li a{
 #avator {
   display: block;
   margin-bottom: 30px;
-  margin-right: 50px;
-  width: 200px;
-  float: right;
+  
+  width: 70%;
+  
 
 }
 .resume a{
@@ -462,7 +467,7 @@ nav ul li a{
 	font-weight: 500;
 }
 .about{
-	padding: 200px 0;
+	padding: 150px 0 50px 0;
 
 }
 .about h3{
@@ -473,6 +478,34 @@ nav ul li a{
 }
 
 
+/*
+  ========================================
+  linkedin logo
+  ========================================
+*/
+
+
+
+.logo{
+	width: 3%;
+}
+
+
+.centertext{
+  text-align: center;
+}
+.centertext a img{
+	background: #D8D8D8;
+	margin: 10px 10px;
+
+}
+.centertext a img:hover{	
+	background-color: #50E3C2 ;
+}
+
+.centertext a:hover{
+	border-bottom:0px;
+}
 
 /*
   ========================================
@@ -559,4 +592,34 @@ footer{
 		margin-right: 10px;
 	}
 	a#back-to-top:hover { color: dodgerblue; }
-	
+
+
+/* About */
+.table{
+  display: table;
+}
+.table-cell{
+  display: inline-block;
+  float: left;
+}
+
+.col-1-2-new{
+  display: table-cell;
+  vertical-align: middle;
+}
+.width33{
+	width: 33%
+}
+.width66{
+	width: 66%;
+}
+.width50{
+	width: 50%;
+}
+.width100{
+	width: 100%;
+}
+.margin-20{
+	width: 50%;
+	margin: 0 auto;
+}

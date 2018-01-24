@@ -143,6 +143,23 @@ a:hover{
 
 /*
   ========================================
+  NEXT & PREV
+  ========================================
+*/
+
+.next a{
+  border-top: 1px solid #D6D6D6;
+}
+.next a:hover{
+  /*border-bottom: 0px;*/
+  background-color: #F1F1F1;
+}
+.uxcolor{
+  color: #50E3C2;
+}
+
+/*
+  ========================================
   Typography
   ========================================
 */
@@ -413,7 +430,7 @@ strong{
 .grey{
   background-color: #ECECEC;
   padding: 10px;
-  margin-bottom: 10px;
+  
 }
 .class1{
   margin-left: 50px;
@@ -593,6 +610,9 @@ i{
 .padding-50-0{
   padding: 50px 0px;
 }
+.padding-30-0{
+  padding: 30px 0px;
+}
 
 .padding-bottom-20{
   padding-bottom: 20px;
@@ -625,6 +645,9 @@ i{
 }
 .alignleft{
   text-align: left;
+}
+.alignright{
+  text-align: right;
 }
 .vertical-middle{
   position: relative;
@@ -679,6 +702,12 @@ i{
   padding: 0 50px;
 }
 
+.next-left{
+  padding-left: 10%;
+}
+.next-right{
+  padding-right: 10%;
+}
 
 .size13{
   font-size: 13px;
@@ -690,7 +719,7 @@ i{
 .centerimg{
   display: block;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
 }
 .red{
   color: #D9463E;
@@ -939,6 +968,7 @@ i{
 .centertext{
   text-align: center;
 }
+
 
 
 /* style for vf list */
