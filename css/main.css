@@ -629,6 +629,7 @@ footer{
 
 #bgvid{
 	width: 100%;
+
 }
 
 @media screen and (min-width: 1280px) {
@@ -636,4 +637,6 @@ footer{
 		width: 1280px;
 		margin: 0 auto;
 	}
+	body{overflow-x:hidden;}
 }
+
